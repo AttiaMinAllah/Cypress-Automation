@@ -1,0 +1,19 @@
+{
+  "name": "clevershuttle",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=16.4.2"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress: open": "./node_modules/.bin/cypress open",
+    "cypress: run": "./node_modules/.bin/cypress run --spec ** / *. spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.10.0"
+  }
+}
