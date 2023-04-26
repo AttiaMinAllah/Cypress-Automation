@@ -8,7 +8,7 @@ class LoginPage {
   login = (username, password) => {
     cy.get(selectors.login.username).type(username);
     cy.get(selectors.login.password).type(password);
-    cy.get(selectors.login.anmeldenBtn).contains('Anmelden').click();
+    cy.get(selectors.login.anmeldenBtn).click();
   };
 }
 
