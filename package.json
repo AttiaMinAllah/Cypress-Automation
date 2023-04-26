@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "cypress-dotenv": "^2.0.0",
+    "cypress": "^10.4.0"
+  }
+}
