@@ -1,28 +1,28 @@
-import { selectors } from '../../support/selectors';
+import { selectors } from '../common/selectors';
 
 class CalendarPage {
   openShift = () => {
-    cy.get(selectors.shiftCell).click(); // Clicking on a shift cell element
+    cy.get(selectors.shiftCell).click(); 
   };
 
   startWorkingTime = () => {
-    cy.get(selectors.startWorkingTimeBtn).click(); // Clicking on a start working time button element
+    cy.get(selectors.startWorkingTimeBtn).click(); 
   };
 
   clickAllClearBtn = () => {
-    cy.get(selectors.allClear).click(); // Clicking on an all clear button element
-    cy.get(selectors.stopWorkingTimeBtn).should('be.visible'); // Checking if a stop working time button is visible
+    cy.get(selectors.allClear).click();
+    cy.get(selectors.stopWorkingTimeBtn).should('be.visible'); 
   };
 
   stopWorkingTime = () => {
-    cy.get(selectors.stopWorkingTimeBtn).click(); // Clicking on a stop working time button element
-    cy.get(selectors.stopTimeTrackingBtn).click(); // Clicking on a stop time tracking button element in a confirmation popup
-    cy.get(selectors.startWorkingTimeBtn).should('be.visible'); // Checking if a start working time button is visible
+    cy.get(selectors.stopWorkingTimeBtn).click(); 
+    cy.get(selectors.stopTimeTrackingBtn).click(); 
+    cy.get(selectors.startWorkingTimeBtn).should('be.visible'); 
   };
 
   validateTimerStarted = () => {
-    cy.get(selectors.backToCalandarPageBtn).click(); // Clicking on a back to calendar page button element
-    cy.get(selectors.timer).should('be.visible'); // Checking if a timer element is visible
+    cy.get(selectors.backToCalandarPageBtn).click(); 
+    cy.get(selectors.timer).should('be.visible'); 
   };
 
   validateTimerStopped = () => {

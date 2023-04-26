@@ -1,4 +1,4 @@
-import { selectors } from "../../support/selectors";
+import { selectors } from "../common/selectors";
 
 class LoginPage {
   visit = () => {

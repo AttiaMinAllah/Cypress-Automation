@@ -6,7 +6,7 @@ describe('Calendar Page', () => {
 
   beforeEach(() => {
     LoginPage.visit();
-    LoginPage.login('cityshuttleschedule30', 'qwertz123!');
+    LoginPage.login(Cypress.env('USERNAME'), Cypress.env('PASSWORD'));
     cy.title().should('include', 'CleverPortal');
   });
 

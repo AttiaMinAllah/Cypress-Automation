@@ -4,7 +4,7 @@ export const selectors = {
       password: '#password',
       anmeldenBtn: '#kc-login',
     },
-    shiftCell: '.UpcomingShiftStyles-shiftList > :nth-child(2)',
+    shiftCell: '.UpcomingShiftStyles-shiftList > :nth-child(3)',
     startWorkingTimeBtn: "button:contains('Record working time')",
     stopWorkingTimeBtn: "button:contains('End working time')",
     stopTimeTrackingBtn:'[data-test="ShiftScreen.StopWorkingTimeDialog.ConfirmButton"]',
